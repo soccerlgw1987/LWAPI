@@ -14,5 +14,10 @@ namespace LWAPI.Controllers
 
             return View();
         }
+
+        public ActionResult API()
+        {
+            return View();
+        }
     }
 }

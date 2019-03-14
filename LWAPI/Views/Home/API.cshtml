@@ -1,0 +1,222 @@
+﻿
+@{
+    Layout = null;
+}
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Landon Wyant - Financial API</title>
+    <meta name="keywords" content="HTML5 Admin Template" />
+    <meta name="description" content="Porto Admin - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Content/datepicker3.css" rel="stylesheet" />
+
+    <!-- Theme CSS -->
+    <link href="~/Content/theme.css" rel="stylesheet" />
+
+    <!-- Skin CSS -->
+    <link href="~/Content/default.css" rel="stylesheet" />
+
+    <!-- Theme Custom CSS -->
+    <link href="~/Content/theme-custom.css" rel="stylesheet" />
+
+    <!-- Head Libs -->
+    <script src="~/Scripts/modernizr.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/img/favicon.ico">
+
+</head>
+
+<!-- start: page -->
+<div class="row">
+    <div class="col-md-offset-1 col-md-10">
+        <h1 style="text-align:center">Financial API</h1>
+        <h5 style="text-align:center">Welcome! I will explain here how each section works. Simply click the button for each section if additional info is requested.</h5>
+        <h4 style="text-align:center"><a href="http://lwapi.azurewebsites.net/swagger/ui/index" target="_blank">Check it out here!</a></h4>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-offset-3 col-md-6">
+        <section class="panel panel-primary">
+            <header class="panel-heading">
+                <div class="panel-actions">
+                    <a href="#" class="fa fa-caret-down"></a>
+                </div>
+
+                <h2 class="panel-title">Households</h2>
+            </header>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-6">
+                        <a class="mt-xs mb-xs popup-with-move-anim btn btn-primary" href="#households-dialog">Click for more information!</a>
+                    </div>
+                </div>
+
+                <!-- Dialog -->
+                <div id="households-dialog" class="dialog dialog-sm zoom-anim-dialog mfp-hide">
+                    <h1>Households:</h1>
+                    <p>The first section of Households retrieves all Households and their associated data. This can be Json as well.</p>
+                    <p>The second section of Households retrieves a specific Household's data based on the Household Id. This can be Json as well.</p>
+                    <p>The final section of Households adds a new Household.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-offset-2 col-md-4">
+        <section class="panel panel-success">
+            <header class="panel-heading">
+                <div class="panel-actions">
+                    <a href="#" class="fa fa-caret-down"></a>
+                </div>
+
+                <h2 class="panel-title">Budgets</h2>
+            </header>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <a class="mt-xs mb-xs popup-with-move-anim btn btn-success" href="#budgets-dialog">Click for more information!</a>
+                    </div>
+                </div>
+
+                <!-- Dialog -->
+                <div id="budgets-dialog" class="dialog dialog-sm zoom-anim-dialog mfp-hide">
+                    <h1>Budgets:</h1>
+                    <p>The first section of Budgets retrieves all Budgets and their associated data. This can be Json as well.</p>
+                    <p>The second section of Budgets retrieves a specific Budget's data based on the Budgets Id. This can be Json as well.</p>
+                    <p>The second section of Budgets retrieves a specific Budget's data based on the Households Id. This can be Json as well.</p>
+                    <p>The final section of Budgets adds a new Budget.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel panel-warning">
+            <header class="panel-heading">
+                <div class="panel-actions">
+                    <a href="#" class="fa fa-caret-down"></a>
+                </div>
+
+                <h2 class="panel-title">Budget Items</h2>
+            </header>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <a class="mt-xs mb-xs popup-with-move-anim btn btn-warning" href="#budgetitems-dialog">Click for more information!</a>
+                    </div>
+                </div>
+
+                <!-- Dialog -->
+                <div id="budgetitems-dialog" class="dialog dialog-sm zoom-anim-dialog mfp-hide">
+                    <h1>Budget Items:</h1>
+                    <p>The first section of Budget Items retrieves all Budget Items and their associated data. This can be Json as well.</p>
+                    <p>The second section of Budget Items retrieves a specific Budget Item's data based on the Budget Item Id. This can be Json as well.</p>
+                    <p>The second section of Budget Items retrieves a specific Budget Item's data based on the Budget Id. This can be Json as well.</p>
+                    <p>The final section of Budget Items adds a new Budget Item.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-4">
+        <section class="panel panel-danger">
+            <header class="panel-heading">
+                <div class="panel-actions">
+                    <a href="#" class="fa fa-caret-down"></a>
+                </div>
+
+                <h2 class="panel-title">Accounts</h2>
+            </header>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <a class="mt-xs mb-xs popup-with-move-anim btn btn-danger" href="#accounts-dialog">Click for more information!</a>
+                    </div>
+                </div>
+
+                <!-- Dialog -->
+                <div id="accounts-dialog" class="dialog dialog-sm zoom-anim-dialog mfp-hide">
+                    <h1>Accounts:</h1>
+                    <p>The first section of Accounts retrieves all Accounts and their associated data. This can be Json as well.</p>
+                    <p>The second section of Accounts retrieves a specific Account's data based on the Accounts Id. This can be Json as well.</p>
+                    <p>The second section of Accounts retrieves a specific Account's data based on the Households Id. This can be Json as well.</p>
+                    <p>The final section of Accounts adds a new Account.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel panel-info">
+            <header class="panel-heading">
+                <div class="panel-actions">
+                    <a href="#" class="fa fa-caret-down"></a>
+                </div>
+
+                <h2 class="panel-title">Transactions</h2>
+            </header>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <a class="mt-xs mb-xs popup-with-move-anim btn btn-info" href="#transactions-dialog">Click for more information!</a>
+                    </div>
+                </div>
+
+                <!-- Dialog -->
+                <div id="transactions-dialog" class="dialog dialog-sm zoom-anim-dialog mfp-hide">
+                    <h1>Transactions:</h1>
+                    <p>The first section of Transactions retrieves all Transactions and their associated data. This can be Json as well.</p>
+                    <p>The second section of Transactions retrieves a specific Transaction's data based on the Transactions Id. This can be Json as well.</p>
+                    <p>The third section of Transactions retrieves a specific Transaction's data based on the Accounts Id. This can be Json as well.</p>
+                    <p>The fourth section of Transactions retrieves a specific Transaction's data based on the Budget Items Id. This can be Json as well.</p>
+                    <p>The final section of Transactions adds a new Transaction.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<div class="row">
+    <p class="text-center text-muted mt-md mb-md">&copy; Copyright 2018. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>. - Customized by Landon Wyant</p>
+</div>
+
+<!-- end: page -->
+<!-- Vendor -->
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.browser.mobile.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/nanoscroller.js"></script>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+<script src="~/Scripts/magnific-popup.js"></script>
+<script src="~/Scripts/jquery.placeholder.js"></script>
+
+<!-- Specific Page Vendor -->
+<script src="~/Scripts/pnotify.custom.js"></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src="~/Scripts/theme.js"></script>
+
+<!-- Theme Custom -->
+<script src="~/Scripts/theme.custom.js"></script>
+
+<!-- Theme Initialization Files -->
+<script src="~/Scripts/theme.init.js"></script>
+
+<!-- Examples -->
+<script src="~/Scripts/examples.lightbox.js"></script>
