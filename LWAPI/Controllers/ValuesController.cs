@@ -11,6 +11,7 @@ using System.Web.Http;
 
 namespace LWAPI.Controllers
 {
+    
     /// <summary>
     /// Financial Portal Data
     /// </summary>
@@ -61,6 +62,20 @@ namespace LWAPI.Controllers
         }
 
         /// <summary>
+        /// Edit a current Household
+        /// </summary>
+        /// <param name="id">Enter the Household Id</param>
+        /// <param name="name">Change Name of Household</param>
+        /// <param name="description">Change Household Description</param>
+        /// <param name="incomeamount">Change Income amount for Household</param>
+        /// <returns></returns>
+        [Route("EditHousehold")]
+        [HttpPost]
+        public async Task<int> EditHousehold(int id, string name, string description, decimal incomeamount)
+        {
+            return await db.EditHousehold(id, name, description, incomeamount);
+        }
+        /// <summary>
         /// Add an additional Household
         /// </summary>
         /// <param name="name">Name the Household</param>
@@ -72,6 +87,17 @@ namespace LWAPI.Controllers
         public async Task<int> AddHousehold(string name, string description, decimal incomeamount)
         {
             return await db.AddHousehold(name, description, incomeamount);
+        }
+        /// <summary>
+        /// Delete a current Household
+        /// </summary>
+        /// <param name="id">Enter the Household Id</param>
+        /// <returns></returns>
+        [Route("DeleteHousehold")]
+        [HttpDelete]
+        public async Task<int> DeleteHousehold(int id)
+        {
+            return await db.DeleteHousehold(id);
         }
 
         //Account

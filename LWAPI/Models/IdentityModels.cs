@@ -44,12 +44,25 @@ namespace LWAPI.Models
             return await Database.SqlQuery<Household>("GetHouseholdById @id",
                 new SqlParameter("id", id)).FirstOrDefaultAsync();
         }
+        public async Task<int> EditHousehold(int id, string name, string description, decimal incomeamount)
+        {
+            return await Database.ExecuteSqlCommandAsync("AddHousehold @id, @name, @description, @incomeamount",
+                new SqlParameter("id", id),
+                new SqlParameter("name", name),
+                new SqlParameter("description", description),
+                new SqlParameter("incomeamount", incomeamount));
+        }
         public async Task<int> AddHousehold(string name, string description, decimal incomeamount)
         {
             return await Database.ExecuteSqlCommandAsync("AddHousehold @name, @description, @incomeamount",
                 new SqlParameter("name", name),
                 new SqlParameter("description", description),
                 new SqlParameter("incomeamount", incomeamount));
+        }
+        public async Task<int> DeleteHousehold(int id)
+        {
+            return await Database.ExecuteSqlCommandAsync("AddHousehold @id",
+                new SqlParameter("id", id));
         }
 
         //Account
