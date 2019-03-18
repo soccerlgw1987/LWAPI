@@ -70,7 +70,7 @@ namespace LWAPI.Controllers
         /// <param name="incomeamount">Change Income amount for Household</param>
         /// <returns></returns>
         [Route("EditHousehold")]
-        [HttpPost]
+        [HttpPut]
         public async Task<int> EditHousehold(int id, string name, string description, decimal incomeamount)
         {
             return await db.EditHousehold(id, name, description, incomeamount);
