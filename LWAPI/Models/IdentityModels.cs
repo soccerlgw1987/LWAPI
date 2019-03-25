@@ -46,7 +46,7 @@ namespace LWAPI.Models
         }
         public async Task<int> EditHousehold(int id, string name, string description, decimal incomeamount)
         {
-            return await Database.ExecuteSqlCommandAsync("AddHousehold @id, @name, @description, @incomeamount",
+            return await Database.ExecuteSqlCommandAsync("EditHousehold @id, @name, @description, @incomeamount",
                 new SqlParameter("id", id),
                 new SqlParameter("name", name),
                 new SqlParameter("description", description),
@@ -61,7 +61,7 @@ namespace LWAPI.Models
         }
         public async Task<int> DeleteHousehold(int id)
         {
-            return await Database.ExecuteSqlCommandAsync("AddHousehold @id",
+            return await Database.ExecuteSqlCommandAsync("DeleteHousehold @id",
                 new SqlParameter("id", id));
         }
 
